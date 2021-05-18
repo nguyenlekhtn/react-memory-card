@@ -1,0 +1,30 @@
+.card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  border: 5px solid #e2b64c;
+  background-color: #d58e7e;
+  box-shadow: rgba($color: #000, $alpha: 0.7) 5px 5px 2px;
+  cursor: pointer;
+}
+
+.card > img {
+  width: 100px;
+  /* border: 2px orange solid; */
+  background-color: linear-gradient(red, yellow);
+}
+
+.card > span {
+  margin-top: 0.5em;
+}
+
+.card:hover {
+  box-shadow: rgba($color: #000, $alpha: 0.7) 5px 5px 2px,
+    0px 0px 42px 20px #e2b64c;
+}

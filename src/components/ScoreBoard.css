@@ -1,0 +1,49 @@
+.scoreBoard {
+  margin-top: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.board {
+  width: 150px;
+  height: 75px; /* as the half of the width */
+  border: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.board:first-child {
+  background-color: red;
+  color: white;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 2px solid black;
+  border-bottom: none;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.board:last-child {
+  padding-top: 10px;
+
+  background-color: white;
+  color: red;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.board > span:last-child {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
