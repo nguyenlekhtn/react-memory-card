@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import _ from "lodash";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -8,53 +9,38 @@ import Card from "./components/Card";
 
 import data from "./POKEMON";
 
-const shuffle = (array) => {
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = { ...array[currentIndex] };
-    array[currentIndex] = { ...array[randomIndex] };
-    array[randomIndex] = { ...temporaryValue };
-  }
-
-  return array;
-};
-
 const App = (props) => {
   const [bestScore, setBestScore] = useState(0);
   const [clickedCardsArr, setClickedCardsArr] = useState([]);
   // const [lastClicked, setLastClicked] = useState("");
 
-  let cards = shuffle(
-    data.map((card) => (
-      <Card
-        data={card}
-        key={card.name}
-        bestScore={bestScore}
-        setBestScore={setBestScore}
-        clickedCardsArr={clickedCardsArr}
-        setClickedCardsArr={setClickedCardsArr}
-        shuffle={() => shuffle(cards)}
-      />
-    ))
-  );
+  let cards = data.map((card) => (
+    <Card data={card} key={card.name} handleCardClick={handleCardClick} />
+  ));
+  const [cardsArr, setCardsArr] = useState(_.shuffle(cards));
 
-  const [cardsArr, setCardsArr] = useState(cards);
+  function handleCardClick(name) {
+    setClickedCardsArr((prevArr) => [...prevArr, name]);
+    setCardsArr((prevArr) => _.shuffle(prevArr));
+  }
+
+  useEffect(() => {
+    const startingArr = clickedCardsArr.slice(0, clickedCardsArr.length - 1);
+    const lastValue = clickedCardsArr[clickedCardsArr.length - 1];
+    if (startingArr.includes(lastValue)) {
+      if (bestScore < startingArr.length) {
+        setBestScore(startingArr.length);
+      }
+      setClickedCardsArr([]);
+    }
+  }, [bestScore, clickedCardsArr, setClickedCardsArr]);
 
   return (
     <div className="app">
       <Header />
       <ScoreBoard bestScore={bestScore} currentScore={clickedCardsArr.length} />
       <div className="main">
-        <CardGrid>{cards}</CardGrid>
+        <CardGrid>{cardsArr}</CardGrid>
       </div>
     </div>
   );
