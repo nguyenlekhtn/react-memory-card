@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-memory-card/static/css/main.cc75fe51.chunk.css",
-    "main.js": "/react-memory-card/static/js/main.bcc94eb0.chunk.js",
-    "main.js.map": "/react-memory-card/static/js/main.bcc94eb0.chunk.js.map",
-    "runtime-main.js": "/react-memory-card/static/js/runtime-main.b4520e2b.js",
-    "runtime-main.js.map": "/react-memory-card/static/js/runtime-main.b4520e2b.js.map",
-    "static/js/2.b28a4324.chunk.js": "/react-memory-card/static/js/2.b28a4324.chunk.js",
-    "static/js/2.b28a4324.chunk.js.map": "/react-memory-card/static/js/2.b28a4324.chunk.js.map",
-    "static/js/3.78acb623.chunk.js": "/react-memory-card/static/js/3.78acb623.chunk.js",
-    "static/js/3.78acb623.chunk.js.map": "/react-memory-card/static/js/3.78acb623.chunk.js.map",
+    "main.css": "/react-memory-card/static/css/main.b1e24a33.chunk.css",
+    "main.js": "/react-memory-card/static/js/main.eee21c3f.chunk.js",
+    "main.js.map": "/react-memory-card/static/js/main.eee21c3f.chunk.js.map",
+    "runtime-main.js": "/react-memory-card/static/js/runtime-main.54638a3e.js",
+    "runtime-main.js.map": "/react-memory-card/static/js/runtime-main.54638a3e.js.map",
+    "static/js/2.12f7746d.chunk.js": "/react-memory-card/static/js/2.12f7746d.chunk.js",
+    "static/js/2.12f7746d.chunk.js.map": "/react-memory-card/static/js/2.12f7746d.chunk.js.map",
+    "static/js/3.1a9a04cd.chunk.js": "/react-memory-card/static/js/3.1a9a04cd.chunk.js",
+    "static/js/3.1a9a04cd.chunk.js.map": "/react-memory-card/static/js/3.1a9a04cd.chunk.js.map",
     "index.html": "/react-memory-card/index.html",
-    "static/css/main.cc75fe51.chunk.css.map": "/react-memory-card/static/css/main.cc75fe51.chunk.css.map",
-    "static/js/2.b28a4324.chunk.js.LICENSE.txt": "/react-memory-card/static/js/2.b28a4324.chunk.js.LICENSE.txt",
+    "static/css/main.b1e24a33.chunk.css.map": "/react-memory-card/static/css/main.b1e24a33.chunk.css.map",
+    "static/js/2.12f7746d.chunk.js.LICENSE.txt": "/react-memory-card/static/js/2.12f7746d.chunk.js.LICENSE.txt",
     "static/media/1.png": "/react-memory-card/static/media/1.961a737a.png",
     "static/media/10.png": "/react-memory-card/static/media/10.dc7c8831.png",
     "static/media/11.png": "/react-memory-card/static/media/11.bd83be7f.png",
@@ -31,9 +31,9 @@
     "static/media/Header.css": "/react-memory-card/static/media/PokemonSolid.5d60be1f.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4520e2b.js",
-    "static/js/2.b28a4324.chunk.js",
-    "static/css/main.cc75fe51.chunk.css",
-    "static/js/main.bcc94eb0.chunk.js"
+    "static/js/runtime-main.54638a3e.js",
+    "static/js/2.12f7746d.chunk.js",
+    "static/css/main.b1e24a33.chunk.css",
+    "static/js/main.eee21c3f.chunk.js"
   ]
 }
