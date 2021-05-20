@@ -1,12 +1,12 @@
 import "./Card.scss";
 
 export default function Card(props) {
-  const { data, handleCardClick } = props;
+  const { pokemon, handleClick } = props;
 
   return (
-    <div className="card" onClick={(e) => handleCardClick(data.name)}>
-      <img src={props.data.img} alt={props.data.name} />
-      <span>{props.data.name}</span>
+    <div className="card" onClick={() => handleClick(pokemon.name)}>
+      <img src={pokemon.img} alt={pokemon.name} />
+      <span>{pokemon.name}</span>
     </div>
   );
 }
